@@ -154,7 +154,76 @@ h3.heading {
       cursor: pointer;
       &.active {
         color: rgb(235, 142, 20);
-        background: rgba(0, 0, 0, 0.02);
+      }
+    }
+  }
+}
+
+/* image slider section start */
+
+.image_slider {
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  border: var(--border0);
+  .slider_container {
+    /* max-width: 40rem;
+    max-height: 20rem; */
+    height: 23rem;
+    width: 35rem;
+    border: var(--border1);
+    position: relative;
+    margin: 0 auto;
+    padding: 0.5rem;
+    img {
+      &.current-image {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      &.hide-current-image {
+        display: none;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0.3rem;
+      background: rgba(255, 255, 255, 0.5);
+      font-size: 1.5rem;
+      cursor: pointer;
+      font-weight: 700;
+      &:first-of-type {
+        left: 0.5rem;
+      }
+      &:last-of-type {
+        right: 0.5rem;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .circle-indicators {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      .current-indicator {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: var(--white);
+        &.inactive-indicator {
+          background: rgba(255, 255, 255, 0.5);
+        }
       }
     }
   }
