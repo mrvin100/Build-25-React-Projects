@@ -3,6 +3,8 @@ import Accordion from "./components/accordion";
 import ImageSlider from "./components/image-slider";
 import RandomColor from "./components/random-color";
 import StarRating from "./components/star-rating";
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
 import "./css/styles.css";
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         limit={"10"}
       />
       <LoadMoreData />
+      <TreeView menus={menus} />
     </>
   );
 }
