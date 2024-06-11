@@ -12,6 +12,7 @@
   box-sizing: border-box;
   border: none;
   text-decoration: none;
+  outline: none;
 }
 
 /* root varibales */
@@ -36,6 +37,10 @@ html {
 body {
   font-family: var(--body-font);
   padding: 1rem;
+}
+
+input {
+  font-family: var(--body-font);
 }
 
 /* reusable classes */
@@ -287,5 +292,41 @@ h3.heading {
         display: inline-block;
       }
     }
+  }
+}
+
+/* qr code generator section starts */
+
+.qr_code {
+  border: var(--border0);
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  h2 {
+    text-align: center;
+  }
+  .input_box {
+    max-width: 20rem;
+    width: 100%;
+    input {
+      width: 100%;
+      border-bottom: var(--border0);
+      padding: 0.3rem;
+      font-size: 1.1rem;
+      font-weight: 200;
+      &:focus {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    }
+    .btn {
+      margin-top: 1rem;
+      width: 100%;
+      text-transform: capitalize;
+    }
+  }
+  .output_box {
+    max-width: 20rem;
+    width: 100%;
+    text-align: center;
   }
 }

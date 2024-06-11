@@ -1,16 +1,17 @@
-import LoadMoreData from "./components/load-more-data";
-import Accordion from "./components/accordion";
-import ImageSlider from "./components/image-slider";
-import RandomColor from "./components/random-color";
-import StarRating from "./components/star-rating";
-import TreeView from "./components/tree-view";
-import menus from "./components/tree-view/data";
+// import LoadMoreData from "./components/load-more-data";
+// import Accordion from "./components/accordion";
+// import ImageSlider from "./components/image-slider";
+// import RandomColor from "./components/random-color";
+// import StarRating from "./components/star-rating";
+// import TreeView from "./components/tree-view";
+// import menus from "./components/tree-view/data";
+import QRCodeGenerator from "./components/qr-code-generator";
 import "./css/styles.css";
 
 function App() {
   return (
     <>
-      <Accordion />
+      {/* <Accordion />
       <RandomColor />
       <StarRating noOfStars={5} />
       <ImageSlider
@@ -19,7 +20,8 @@ function App() {
         limit={"10"}
       />
       <LoadMoreData />
-      <TreeView menus={menus} />
+      <TreeView menus={menus} /> */}
+      <QRCodeGenerator />
     </>
   );
 }
