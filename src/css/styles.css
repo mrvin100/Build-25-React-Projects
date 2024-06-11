@@ -330,3 +330,8 @@ h3.heading {
     text-align: center;
   }
 }
+
+/* Light dark theme section starts */
+.light_dark {
+  border: var(--border0);
+}
