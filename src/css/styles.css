@@ -332,6 +332,36 @@ h3.heading {
 }
 
 /* Light dark theme section starts */
+
 .light_dark {
   border: var(--border0);
+}
+
+/* scroll indicator section starts */
+
+.scroll_indicator {
+  border: var(--border0);
+  .top_container {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    .scroll_porgress_tracking_container {
+      height: 2rem;
+      border: var(--border0);
+      .current_progress_bar {
+        background: var(--light-clr);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--black);
+      }
+    }
+  }
+  .heading {
+    text-align: center;
+  }
+  h3 {
+    margin: 0.5rem 0;
+  }
 }

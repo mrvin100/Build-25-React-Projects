@@ -5,8 +5,9 @@
 // import StarRating from "./components/star-rating";
 // import TreeView from "./components/tree-view";
 // import menus from "./components/tree-view/data";
-import LightDarkMode from "./components/light-dark-mode";
-import QRCodeGenerator from "./components/qr-code-generator";
+// import LightDarkMode from "./components/light-dark-mode";
+// import QRCodeGenerator from "./components/qr-code-generator";
+import ScrollIndicator from "./components/scroll-indicator";
 import "./css/styles.css";
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
       />
       <LoadMoreData />
       <TreeView menus={menus} /> */}
-      <QRCodeGenerator />
-      <LightDarkMode />
+      {/* <QRCodeGenerator />
+      <LightDarkMode /> */}
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
     </>
   );
 }
