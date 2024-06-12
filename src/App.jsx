@@ -11,6 +11,7 @@ import TabTest from "./components/custom-tabs/tab-test";
 import ScrollIndicator from "./components/scroll-indicator";
 import "./css/styles.css";
 import ModalTest from "./components/custom-modal-popup/modal-test";
+import GithubProfileFinder from "./components/github-profile-finder";
 
 function App() {
   const tabs = [
@@ -70,8 +71,11 @@ function App() {
       label: "11. custom modal popup",
       content: <ModalTest />,
     },
+    {
+      label: "12. github profile finder",
+      content: <GithubProfileFinder />,
+    },
   ];
-  console.log(tabs);
   return (
     <>
       <TabTest tabs={tabs} />
@@ -88,7 +92,8 @@ function App() {
       <QRCodeGenerator />
     <LightDarkMode />
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
-      <ModalTest />*/}
+      <ModalTest />
+      <GithubProfileFinder />*/}
     </>
   );
 }
