@@ -87,6 +87,17 @@ h3.heading {
   }
 }
 
+.icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: var(--border1);
+  padding: 0.1rem 0.2rem;
+  &:hover {
+    transition: color 0.2s linear;
+    color: var(--light-clr);
+  }
+}
+
 /* accordion section starts */
 
 .accordion {
@@ -386,5 +397,32 @@ h3.heading {
     min-height: 10rem;
     border: var(--border1);
     padding: 0 1rem;
+  }
+}
+
+/* Modal box section starts */
+
+.modal_box {
+  border: var(--border0);
+  min-height: 20rem;
+  position: relative;
+  .btn {
+    text-transform: capitalize;
+  }
+  .modal_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    max-width: 20rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: var(--border1);
+    i.bx {
+      position: absolute;
+      top: 0.2rem;
+      right: 0.2rem;
+    }
   }
 }
