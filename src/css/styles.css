@@ -511,3 +511,32 @@ h3.heading {
     }
   }
 }
+
+/* search autocomplete section starts */
+
+.search_autocomplete {
+  max-width: 30rem;
+  border: var(--border0);
+  .input_box {
+    border-bottom: var(--border0);
+    input {
+      padding: 0.5rem;
+      letter-spacing: 0.02rem;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+  }
+  .suggestions {
+    border: var(--border0);
+    li {
+      list-style: none;
+      cursor: pointer;
+      display: block;
+      padding: 0.2rem 0.3rem;
+      text-align: center;
+      &:hover {
+        background: rgba(167, 167, 194, 0.1);
+      }
+    }
+  }
+}
