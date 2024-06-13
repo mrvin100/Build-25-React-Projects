@@ -540,3 +540,34 @@ h3.heading {
     }
   }
 }
+
+/* Tic Tac Toe section starts */
+
+.tic_tac_toe {
+  border: var(--border0);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      height: 5rem;
+      width: 5rem;
+      font-size: 1.5rem;
+      /* color: var(--light-clr); */
+    }
+  }
+  .status {
+    text-align: center;
+    padding: 0.5rem;
+    border: var(--border0);
+    margin: 1rem 0;
+  }
+}

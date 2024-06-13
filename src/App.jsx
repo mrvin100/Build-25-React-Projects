@@ -13,6 +13,7 @@ import "./css/styles.css";
 import ModalTest from "./components/custom-modal-popup/modal-test";
 import GithubProfileFinder from "./components/github-profile-finder";
 import SearchAutocomplete from "./components/search-autocomplete-with-api";
+import TicTacToe from "./components/tic-tac-toe";
 
 function App() {
   const tabs = [
@@ -80,6 +81,10 @@ function App() {
       label: "13. search autocomplete with api",
       content: <SearchAutocomplete />,
     },
+    {
+      label: "14. tic tac toe",
+      content: <TicTacToe />,
+    },
   ];
   return (
     <>
@@ -99,7 +104,8 @@ function App() {
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
       <ModalTest />
       <GithubProfileFinder />
-      <SearchAutocomplete />*/}
+      <SearchAutocomplete />
+      <TicTacToe />*/}
     </>
   );
 }

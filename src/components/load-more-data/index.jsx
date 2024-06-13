@@ -21,7 +21,6 @@ export default function LoadMoreData() {
       }
       console.log(result);
     } catch (e) {
-      console.log(e);
       setLoading(false);
     }
   }

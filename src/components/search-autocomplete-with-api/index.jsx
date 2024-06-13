@@ -47,7 +47,6 @@ export default function SearchAutocomplete() {
     setShowDropdown(false);
     setFilteredUsers([]);
   };
-  console.log(users, filteredUsers);
   return (
     <section className="search_autocomplete container">
       {loading ? (
