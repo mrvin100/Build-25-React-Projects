@@ -582,3 +582,8 @@ h3.heading {
     text-align: center;
   }
 }
+
+.onclick_outside_test {
+  border: var(--border0);
+  text-align: center;
+}

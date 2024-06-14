@@ -17,6 +17,7 @@ import TicTacToe from "./components/tic-tac-toe";
 import FeatureFlags from "./components/feature-flag";
 import FeatureFlagsGlobalState from "./components/feature-flag/context";
 import UseFetchHookTest from "./components/use-fetch/test";
+import UseOnclickOutsideTest from "./components/use-outside-click/test";
 
 function App() {
   const tabs = [
@@ -98,8 +99,12 @@ function App() {
       ),
     },
     {
-      label: "16. Use Fetch Hook",
+      label: "16. use fetch hook",
       content: <UseFetchHookTest />,
+    },
+    {
+      label: "17. use onclick outside test",
+      content: <UseOnclickOutsideTest />,
     },
   ];
   return (
@@ -125,7 +130,8 @@ function App() {
       <FeatureFlagsGlobalState>
         <FeatureFlags />
       </FeatureFlagsGlobalState>
-      <UseFetchHookTest />*/}
+      <UseFetchHookTest />
+      <UseOnclickOutsideTest />*/}
     </>
   );
 }
