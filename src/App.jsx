@@ -18,6 +18,7 @@ import FeatureFlags from "./components/feature-flag";
 import FeatureFlagsGlobalState from "./components/feature-flag/context";
 import UseFetchHookTest from "./components/use-fetch/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
+import UseWindowResizeTest from "./components/use-window-resize/test";
 
 function App() {
   const tabs = [
@@ -132,6 +133,7 @@ function App() {
       </FeatureFlagsGlobalState>
       <UseFetchHookTest />
       <UseOnclickOutsideTest />*/}
+      <UseWindowResizeTest />
     </>
   );
 }

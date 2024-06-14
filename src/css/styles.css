@@ -587,3 +587,12 @@ h3.heading {
   border: var(--border0);
   text-align: center;
 }
+
+/* window_resize section starts */
+.window_resize {
+  text-align: center;
+  span {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
