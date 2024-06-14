@@ -1,9 +1,9 @@
 const dummyApiResponse = {
-  showLightAndDarkMode: true,
+  showLightAndDarkMode: false,
   showTicTacToeBoard: true,
   showRandomColorGenerator: true,
   showAccordian: true,
-  showTreeview: true,
+  showTreeview: false,
 };
 const FeatureFlagsDataServiceCall = () => {
   return new Promise((resolve, reject) => {

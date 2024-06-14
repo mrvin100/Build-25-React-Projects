@@ -54,6 +54,8 @@ input {
 }
 h2.heading {
   font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0;
 }
 h3.heading {
   font-size: 0.938rem;
@@ -569,5 +571,14 @@ h3.heading {
     padding: 0.5rem;
     border: var(--border0);
     margin: 1rem 0;
+  }
+}
+
+/* use_fetch_hook section starts */
+
+.use_fetch_hook {
+  border: var(--border0);
+  h3 {
+    text-align: center;
   }
 }

@@ -16,6 +16,7 @@ import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import TicTacToe from "./components/tic-tac-toe";
 import FeatureFlags from "./components/feature-flag";
 import FeatureFlagsGlobalState from "./components/feature-flag/context";
+import UseFetchHookTest from "./components/use-fetch/test";
 
 function App() {
   const tabs = [
@@ -87,6 +88,19 @@ function App() {
       label: "14. tic tac toe",
       content: <TicTacToe />,
     },
+
+    {
+      label: "15. feature flags",
+      content: (
+        <FeatureFlagsGlobalState>
+          <FeatureFlags />
+        </FeatureFlagsGlobalState>
+      ),
+    },
+    {
+      label: "16. Use Fetch Hook",
+      content: <UseFetchHookTest />,
+    },
   ];
   return (
     <>
@@ -107,10 +121,11 @@ function App() {
       <ModalTest />
       <GithubProfileFinder />
       <SearchAutocomplete />
-      <TicTacToe />*/}
+      <TicTacToe />
       <FeatureFlagsGlobalState>
         <FeatureFlags />
       </FeatureFlagsGlobalState>
+      <UseFetchHookTest />*/}
     </>
   );
 }
