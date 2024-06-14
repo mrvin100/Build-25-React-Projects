@@ -14,6 +14,8 @@ import ModalTest from "./components/custom-modal-popup/modal-test";
 import GithubProfileFinder from "./components/github-profile-finder";
 import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import TicTacToe from "./components/tic-tac-toe";
+import FeatureFlags from "./components/feature-flag";
+import FeatureFlagsGlobalState from "./components/feature-flag/context";
 
 function App() {
   const tabs = [
@@ -106,6 +108,9 @@ function App() {
       <GithubProfileFinder />
       <SearchAutocomplete />
       <TicTacToe />*/}
+      <FeatureFlagsGlobalState>
+        <FeatureFlags />
+      </FeatureFlagsGlobalState>
     </>
   );
 }
