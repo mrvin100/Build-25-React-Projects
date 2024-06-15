@@ -596,3 +596,16 @@ h3.heading {
     margin: 0.5rem;
   }
 }
+
+/* scroll_to_top_and_bottom section starts */
+
+.scroll_to_top_and_bottom {
+  text-align: center;
+  border: var(--border0);
+  .btn {
+    margin: 0.5rem 0;
+  }
+  ul {
+    list-style-type: none;
+  }
+}

@@ -19,6 +19,7 @@ import FeatureFlagsGlobalState from "./components/feature-flag/context";
 import UseFetchHookTest from "./components/use-fetch/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
 import UseWindowResizeTest from "./components/use-window-resize/test";
+import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
 
 function App() {
   const tabs = [
@@ -104,8 +105,16 @@ function App() {
       content: <UseFetchHookTest />,
     },
     {
-      label: "17. use onclick outside test",
+      label: "17. use onclick outside",
       content: <UseOnclickOutsideTest />,
+    },
+    {
+      label: "18. use window resize",
+      content: <UseWindowResizeTest />,
+    },
+    {
+      label: "19. scroll to top and buttom",
+      content: <ScrollToTopAndBottom />,
     },
   ];
   return (
@@ -132,8 +141,9 @@ function App() {
         <FeatureFlags />
       </FeatureFlagsGlobalState>
       <UseFetchHookTest />
-      <UseOnclickOutsideTest />*/}
+      <UseOnclickOutsideTest />
       <UseWindowResizeTest />
+      <ScrollToTopAndBottom />*/}
     </>
   );
 }
