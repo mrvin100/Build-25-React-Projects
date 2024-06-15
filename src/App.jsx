@@ -20,6 +20,7 @@ import UseFetchHookTest from "./components/use-fetch/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
 import UseWindowResizeTest from "./components/use-window-resize/test";
 import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
+import ScrollToSection from "./components/scroll-to-top-and-bottom/scroll-to-section";
 
 function App() {
   const tabs = [
@@ -116,6 +117,10 @@ function App() {
       label: "19. scroll to top and buttom",
       content: <ScrollToTopAndBottom />,
     },
+    {
+      label: "20. scroll to particular section",
+      content: <ScrollToSection />,
+    },
   ];
   return (
     <>
@@ -143,7 +148,8 @@ function App() {
       <UseFetchHookTest />
       <UseOnclickOutsideTest />
       <UseWindowResizeTest />
-      <ScrollToTopAndBottom />*/}
+      <ScrollToTopAndBottom />
+      <ScrollToSection />*/}
     </>
   );
 }
